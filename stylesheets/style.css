@@ -1,0 +1,378 @@
+*{
+  margin:0px;
+}
+body{
+  padding: 0px;
+
+  margin: 0px;
+  background-color: rgba(158, 228, 237, 0.7);
+}
+#header{
+  background-color: #11143d;
+  margin:0px;
+  padding: 0px;
+  color: aqua;
+position: fixed;
+top: 0px;
+left:0px;
+width: 100%;
+  animation-name: animation2 ;
+  animation-duration: 2s;
+ z-index: 2;
+
+}
+
+#nav,ul {
+  display: inline-block;
+  margin: 0px;
+  color:aqua;
+  position: relative;
+  left:170px;
+}
+#nav li {
+  text-decoration: none;
+  display: inline-block;
+  color: aqua;
+  padding: 15px;
+
+  border-right:  3px solid aqua;
+  border-width: thin;
+}
+@keyframes buttonanimation {
+  from{background-color:#11143d;
+         }
+  to{ background-color: aqua;
+       }
+}
+#nav li:hover{
+ animation: buttonanimation 2s;
+ background-color: aqua;
+
+}
+#nav li a:hover
+{ color:#11143d;
+font-weight: 600;}
+#nav a{
+  text-decoration: none;
+  color:aqua;
+  font-family: 'Poiret One', cursive;
+  font-size: 20px;
+}
+@font-face{
+  font-family: FreeScript;
+  src: url("fonts\freescript.ttf");
+}
+#Title{
+  font-family:'Audiowide',cursive;
+  display: inline-block;
+  position: relative;
+  top: 0px;
+}
+#logo{
+  display: inline-block;
+  position: relative;
+  top: 15px;
+}
+#socialbtns{
+  float:right;
+  position: fixed;
+  top: 200px;
+  left:1285px;
+  background-color: rgba(17, 20, 61, 0.7);
+  border-radius: 10px;
+  z-index: 1;
+
+
+}
+.socialbtn{
+  width: 50px;
+  height: 50px;
+}
+@keyframes zoom {
+  from{ width:50px;
+        height:50px;}
+  to{ width:70px;
+      height:70px;}
+}
+.socialbtn:hover{
+  animation: zoom 0.5s;
+  width:70px;
+  height:70px;
+}
+#facebook{
+
+    padding: 10px ;
+}
+#twitter{
+
+      padding: 10px;
+}
+#instagram{
+
+      padding: 10px;
+}
+
+@keyframes animation2 {
+  from{ opacity: 0.1;}
+  to{ opacity: 1;}
+}
+@keyframes slideranimation {
+0%{
+  left:0%;
+}
+10%{
+  left:0%;
+}
+20%{
+  left:-100%;
+}
+30%{
+  left:-100%;
+}
+40%{
+  left:-200%;
+}
+50%{
+  left:-200%;
+}
+60%{
+  left:-300%;
+}
+70%{
+  left:-300%;
+}
+80%{
+  left:-400%;
+}
+90%{
+  left:-400%;
+}
+100%{
+  left:0%
+}
+}
+.slider_images{
+  height: 500px;
+}
+#slider{
+  z-index: 0;
+  overflow: hidden;
+  margin:0px;
+  position: absolute;
+  top: 90px;
+}
+figure{
+  margin:0px;
+}
+#slider figure img{
+
+  float:left;
+  width:20%;
+}
+#slider figure{
+  position: relative;
+  width: 500%;
+  animation: slideranimation 10s infinite;
+}
+.cards{
+
+
+  padding: 5px;
+  width: 30%;
+  height: 300px;
+  color:aqua;
+  background:rgba(17, 20, 61,0.7);
+}
+#aboutme{
+  width:100%;
+  height:90vh;
+
+  position: relative;
+  top:590px;
+  background-image: url(bgimg1.jpg);
+  background-size: cover;
+
+  background-attachment: fixed;
+}
+#works{
+  width:100%;
+  height:90vh;
+background: url(work.jpg);
+background-size: cover;
+background-attachment: fixed;
+  position: relative;
+  top:590px;
+
+}#contactus{
+  width:100%;
+  height:90vh;
+background:url(contact.jpg);
+background-size: cover;
+  position: relative;
+  top:590px;
+  background-attachment: fixed;
+}
+#contactus h1{
+  font-size: 30px;
+
+}
+.headings{
+  font-family: Orbitron;
+  text-align: center;
+  font-size: 35px;
+  position: relative;
+  top: 20px;
+}
+.aboutmematter{
+  padding:20px;
+  border: 2px solid #11143d;
+  display: inline-block;
+  background-color: rgba(66, 235, 244,0.3);
+  position: relative;
+  top: 10px;
+  left: 50px;
+  width: 40%;
+
+}
+#contact_form{
+  background-color: rgba(0,0,0,0.5);
+  width:30%;
+  height:50vh;
+ text-align: center;
+ border: 2px solid navy;
+ position:relative;
+ top:50px;
+ left:450px;
+}
+#name,#email,#message{
+  background-color: rgba(66, 235, 244,0.3);
+
+  border-bottom: 2px solid green;
+}
+#submit_button{
+  background-color: rgba(66, 235, 244,0.3);
+width:150px;
+height:30px;
+  border: 2px solid green;
+  position: relative;
+  top: 30px;
+  font-family: Orbitron;
+  font-weight: bold;
+
+}
+#contact_form {
+  font-family: 'Herculanum',fantasy;
+  font-size: 18px;
+}
+@keyframes boxanimation {
+  from{
+    background-color: rgba(66, 235, 244,0.3);
+
+  }
+  to{ background-color: #ce8629;}
+}
+.aboutmematter:hover{
+  animation: boxanimation 1s;
+  background-color: #ce8629;
+  color:white;
+  cursor: pointer;
+}
+
+.aboutmematter h1{
+  font-family: 'Spectral Sc';
+  letter-spacing: 15px;
+  border-left: 2px solid #11143d;
+  padding: 3px;
+  color:#11143d;
+}
+.aboutmematter p{
+  font-family: 'lucida Calligraphy',cursive;
+  position: relative;
+  left: 10px;
+  color:#11143d;
+}
+.aboutmematter p img{
+  position: relative;
+  top: 5px;
+}
+#skills{
+  position: relative;
+  left: 150px;
+  top: 140px;
+}
+#Hobbies{
+  position: relative;
+  top: 50px;
+}
+
+
+.tag {
+  font-size: 1.3rem;
+  color: #eee;
+  font-weight: normal;
+  margin: 0 0 3em;
+}
+
+.projContainer {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: -5px;
+  overflow: hidden;
+  position: relative;
+  top: 25px;
+  left: 85px;
+  margin: 10px;
+  vertical-align: top;
+  width: 340px;
+  height: 228px;
+  cursor: pointer;
+
+}
+
+.projContainer img {
+transition: 0.3s;
+width: 340px;
+height: 228px;
+}
+
+.projContainer:hover img {
+ transform: scale(1.2);
+ -webkit-transform: scale(1.2);
+}
+
+.projContainer:hover h2 {
+    padding-top: 10%;
+}
+
+.projInfoContainer {
+  position: absolute;
+  background: rgba(5,5,5,0.8);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  opacity: 0;
+  transition: 0.2s;
+  text-align: center;
+}
+
+.projContainer:hover .projInfoContainer {
+  opacity: 1;
+}
+#works h1{
+  color:White;
+}
+.projCat {
+  color: #5cd9fd;
+  font-weight: bold;
+}
+
+.projSpec {
+ color: #aaa;
+ font-family: sans-serif;
+}
+h2 {
+  color: #fff;
+  transition: 0.3s;
+}
